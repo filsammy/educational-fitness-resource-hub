@@ -1,0 +1,187 @@
+body {
+  background: url("https://images.pexels.com/photos/669576/pexels-photo-669576.jpeg") no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+  color: #333;
+}
+
+/* Home Banner */
+.home-banner {
+  min-height: 100vh;
+  background:
+    linear-gradient(to right, rgba(15, 32, 39, 0.8), rgba(32, 58, 67, 0.8), rgba(44, 83, 100, 0.8)),
+    url("https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg") center/cover no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+/* Custom Button */
+.btn-fit {
+  background: linear-gradient(to right, #56ab2f, #a8e063);
+  /* green gradient */
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 32px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-fit:hover {
+  background: linear-gradient(to right, #a8e063, #56ab2f);
+  /* reverse gradient */
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+/* featured section */
+#featured p {
+  color: #ffffff;
+  font-size: 1.2rem;
+  text-shadow: 0 0 6px #000000;
+}
+
+#featured .card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: none;
+  background: linear-gradient(to right,
+      rgba(15, 32, 39, 0.85),
+      rgba(32, 58, 67, 0.85),
+      rgba(44, 83, 100, 0.85));
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#featured .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+#featured .card img {
+  height: 220px;
+  object-fit: cover;
+  width: 100%;
+  transition: transform 0.4s ease;
+}
+
+#featured .card:hover img {
+  transform: scale(1.05);
+  /* slight zoom effect on hover */
+}
+
+#featured .card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#featured .btn-fit {
+  margin-top: auto;
+  align-self: center;
+}
+
+/* Categories Section */
+#categories-section {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+/* Category Cards */
+.category-card {
+  background: rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+/* Resource Cards */
+.resource-card {
+  background: linear-gradient(to right,
+      rgba(15, 32, 39, 0.9),
+      rgba(32, 58, 67, 0.9),
+      rgba(44, 83, 100, 0.9));
+  color: #fff;
+}
+
+.resource-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+/* About Us section */
+.about-box {
+  background: linear-gradient(to right,
+      rgba(15, 32, 39, 0.9),
+      rgba(32, 58, 67, 0.9),
+      rgba(44, 83, 100, 0.9));
+  border-left: 5px solid #56ab2f;
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+#mission p {
+  color: #ffffff;
+  font-size: 1.2rem;
+  text-shadow: 0 0 6px #000000;
+}
+
+.contact-box {
+  background: linear-gradient(to right,
+      rgba(15, 32, 39, 0.9),
+      rgba(32, 58, 67, 0.9),
+      rgba(44, 83, 100, 0.9));
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-form {
+  max-width: 600px;
+}
+
+.contact-form .form-control {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  border-radius: 8px;
+  padding: 12px;
+  transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.contact-form .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.contact-form .form-control:focus {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: #00c6ff;
+  box-shadow: 0 0 8px rgba(0, 198, 255, 0.5);
+  outline: none;
+}
+
+/* footer */
+footer {
+  background: linear-gradient(to right,
+      rgba(15, 32, 39, 0.9),
+      rgba(32, 58, 67, 0.9),
+      rgba(44, 83, 100, 0.9));
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
